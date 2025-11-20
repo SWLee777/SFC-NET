@@ -1,0 +1,23 @@
+## 这些是传入模型的参数
+dataset: visa
+classes_name: ['candle', 'capsules', 'cashew', 'chewinggum',
+                   'fryum', 'macaroni1', 'macaroni2',
+                'pcb1', 'pcb2', 'pcb3','pcb4', 'pipe_fryum']
+img_resize: 336
+img_cropsize: 336
+resolution: 400
+batch_size: 16
+visualize: True
+output_dir: ./output
+load_memory: True
+cal_pro: False
+experiment_indx: 0
+gpu_id: 0
+pure_test: False
+k_shot: 0
+r_list: [2,3,5]
+features_list: [5,11,17,23]
+backbone: ViT-L-14-336
+pretrained_dataset: openai
+use_cpu: 0
+aaclip_path: "./mvtec"

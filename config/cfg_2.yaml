@@ -1,0 +1,25 @@
+##这些是传入模型的参数
+dataset: mvtec
+classes_name: ['carpet', 'grid', 'leather', 'tile', 'wood',
+                   'bottle', 'cable', 'capsule', 'hazelnut', 'metal_nut', 'pill',
+                   'screw', 'toothbrush', 'transistor', 'zipper'] # 实验所需要的类别
+#classes_name: ['cable','capsule','carpet','hazelnut','metal_nut','pill','tile','wood'] # 实验所需要的类别
+img_resize: 240
+img_cropsize: 240
+resolution: 400
+batch_size: 16
+visualize: True
+output_dir: ./output
+load_memory: True
+cal_pro: False
+experiment_indx: 0
+gpu_id: 0
+pure_test: False
+k_shot: 0
+r_list: [2,5]
+features_list: [10,11]
+backbone: ViT-B-16-plus-240
+pretrained_dataset: laion400m_e32
+use_cpu: 0
+#checkpoint_dirs: {'anomaly':"./zcr/BLIP/ab_mvtec8",'normal':"./zcr/BLIP/nor_mvtec8"}
+#checkpoint_dirs: "./zcr/BLIP/mvtec8"

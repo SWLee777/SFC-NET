@@ -1,0 +1,26 @@
+## 这些是传入模型的参数
+dataset: mvtec
+#classes_name: ['carpet', 'grid', 'leather', 'tile', 'wood',
+#                   'bottle', 'cable', 'capsule', 'hazelnut', 'metal_nut', 'pill',
+#                   'screw', 'toothbrush', 'transistor', 'zipper'] # 实验所需要的类别
+classes_name: ['bottle'] # 实验所需要的类别
+#classes_name: ['bottle', 'cable','metal_nut', 'pill',
+#                   'screw', 'toothbrush', 'transistor'] # 实验所需要的类别
+img_resize: 336
+img_cropsize: 336
+resolution: 400
+batch_size: 64
+visualize: True
+output_dir: ./output
+load_memory: True
+cal_pro: False
+experiment_indx: 0
+gpu_id: 0
+pure_test: False
+k_shot: 0
+r_list: [1]
+features_list: [5]
+backbone: ViT-L-14-336
+pretrained_dataset: openai
+use_cpu: 0
+aaclip_path: "./visa"
